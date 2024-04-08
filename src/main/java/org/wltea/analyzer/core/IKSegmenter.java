@@ -82,6 +82,8 @@ public final class IKSegmenter {
 		segmenters.add(new CN_QuantifierSegmenter());
 		//处理中文词的子分词器
 		segmenters.add(new CJKSegmenter());
+		segmenters.add(new CNContinuousSegmenter());
+		segmenters.add(new CNSplitSegmenter());
 		return segmenters;
 	}
 	
